@@ -18,3 +18,14 @@ VALUES ('Funny Cat Videos', 'A collection of hilarious cat videos', 'https://www
        ('Epic Fails Compilation', 'The best fails of all time', 'https://www.youtube.com/watch?v=3x4srv4oYY4', 'https://i.ytimg.com/vi/3x4srv4oYY4/hqdefault.jpg'),
        ('Cooking with Chef John', 'Learn how to cook delicious meals', 'https://www.youtube.com/watch?v=ddNcz_XCnMA', 'https://i.ytimg.com/vi/ddNcz_XCnMA/hqdefault.jpg');
 
+create database youtube;
+
+create table all_videos (
+  video_id BIGSERIAL NOT NULL PRIMARY KEY,
+  video_title VARCHAR(100) NOT NULL,
+  video_description VARCHAR(200) NOT NULL,
+  video_url VARCHAR(100) NOT NULL,
+  video_thumbnail_url VARCHAR(100)
+  video_likes INT NOT NULL DEFAULT 0
+  video_comments VARCHAR()
+)

@@ -24,4 +24,5 @@ router.get('/video/:id', checkToken,(req: Request, res: Response) => {
   res.send('this is single video page');
 });
 
-export default router
+
+export default router;

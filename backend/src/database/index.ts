@@ -1,4 +1,4 @@
-import { Pool } from 'pg';
+import { Pool, QueryResultRow } from 'pg';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -11,12 +11,12 @@ const pool = new Pool({
   host: 'localhost',
 });
 
-const fetch = async <T>(SQL: string, params: any[]): Promise<T[]> => {
+const fetch = async (SQL: string, params: any[]): Promise<QueryResultRow[]> => {
   const client = await pool.connect();
   console.log('Connected to database');
 
   try {
-    const { rows }: { rows: T[] } = await client.query(SQL, params);
+    const { rows } = await client.query(SQL, params);
     return rows;
   } catch (e) {
     console.log(e);
@@ -27,31 +27,6 @@ const fetch = async <T>(SQL: string, params: any[]): Promise<T[]> => {
   }
 };
 
-const getVideoById = async (id: number) => {
-  const SQL = 'SELECT * FROM videos WHERE id = $1';
-  const params = [id];
 
-  try {
-    const rows = await fetch<Video>(SQL, params);
-    if (rows.length > 0) {
-      return rows[0];
-    } else {
-      console.log(`No video found with id ${id}`);
-      return null;
-    }
-  } catch (e) {
-    console.log(e);
-    return null;
-  }
-};
 
-interface Video {
-  id: number;
-  title: string;
-  description: string;
-  url: string;
-  thumbnail_url: string;
-}
-
-export { fetch, getVideoById };
-
+export {fetch} ;

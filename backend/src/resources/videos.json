@@ -1,0 +1,75 @@
+[
+    {
+      "title": "Video 1",
+      "description": "Description of video 1",
+      "url": "../assets/videos/video_1.mp4",
+      "thumbnailUrl": "/assets/videos/video1-thumbnail.jpg"
+    },
+    {
+      "title": "Video 2",
+      "description": "Description of video 2",
+      "url": "/assets/videos/video2.mp4",
+      "thumbnailUrl": "/assets/videos/video2-thumbnail.jpg"
+    },
+    {
+      "title": "Video 3",
+      "description": "Description of video 3",
+      "url": "/assets/videos/video3.mp4",
+      "thumbnailUrl": "/assets/videos/video3-thumbnail.jpg"
+    },
+    {
+      "title": "Video 4",
+      "description": "Description of video 4",
+      "url": "/assets/videos/video4.mp4",
+      "thumbnailUrl": "/assets/videos/video4-thumbnail.jpg"
+    },
+    {
+      "title": "Video 5",
+      "description": "Description of video 5",
+      "url": "/assets/videos/video5.mp4",
+      "thumbnailUrl": "/assets/videos/video5-thumbnail.jpg"
+    },
+    {
+      "title": "Video 6",
+      "description": "Description of video 6",
+      "url": "/assets/videos/video6.mp4",
+      "thumbnailUrl": "/assets/videos/video6-thumbnail.jpg"
+    },
+    {
+      "title": "Video 7",
+      "description": "Description of video 7",
+      "url": "/assets/videos/video7.mp4",
+      "thumbnailUrl": "/assets/videos/video7-thumbnail.jpg"
+    },
+    {
+      "title": "Video 8",
+      "description": "Description of video 8",
+      "url": "/assets/videos/video8.mp4",
+      "thumbnailUrl": "/assets/videos/video8-thumbnail.jpg"
+    },
+    {
+      "title": "Video 9",
+      "description": "Description of video 9",
+      "url": "/assets/videos/video9.mp4",
+      "thumbnailUrl": "/assets/videos/video9-thumbnail.jpg"
+    },
+    {
+      "title": "Video 10",
+      "description": "Description of video 10",
+      "url": "/assets/videos/video10.mp4",
+      "thumbnailUrl": "/assets/videos/video10-thumbnail.jpg"
+    },
+    {
+      "title": "Video 11",
+      "description": "Description of video 11",
+      "url": "/assets/videos/video11.mp4",
+      "thumbnailUrl": "/assets/videos/video11-thumbnail.jpg"
+    },
+    {
+      "title": "Video 12",
+      "description": "Description of video 12",
+      "url": "/assets/videos/video12.mp4",
+      "thumbnailUrl": "/assets/videos/video12-thumbnail.jpg"
+    }
+  ]
+  

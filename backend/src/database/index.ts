@@ -11,7 +11,7 @@ const pool = new Pool({
   host: 'localhost',
 });
 
-const fetch = async (SQL: string, params: any[]): Promise<QueryResultRow[]> => {
+const fetch = async (SQL: string, params: any[] = []): Promise<QueryResultRow[]> => {
   const client = await pool.connect();
   console.log('Connected to database');
 
@@ -27,6 +27,4 @@ const fetch = async (SQL: string, params: any[]): Promise<QueryResultRow[]> => {
   }
 };
 
-
-
-export {fetch} ;
+export {fetch};

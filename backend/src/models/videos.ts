@@ -1,11 +1,19 @@
-import { fetch } from "../database"
+const fs = require('fs');
+const path = require('path')
 
+let videos = fs.readFileSync(path.join(__dirname, '../../', 'assets/resources', 'videos.json'), 'utf8');
 
-const getAll =  async () => {
+videos = JSON.parse(videos)
 
-    const query = `SELECT * FROM videos LIMIT $1`
-    const result = await fetch(query,[10])
-    return result
+const getVideos = () => videos
+
+export {
+    getVideos
 }
 
-export  {getAll}
+
+
+
+
+
+

@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const checkToken = (req, res, next) => {
     const token = req.headers.authorization;
     if (!token) {
@@ -10,5 +12,5 @@ const checkToken = (req, res, next) => {
         return res.status(400).json({ message: 'Invalid token.' });
     }
 };
-export default checkToken;
+exports.default = checkToken;
 //# sourceMappingURL=checkToken.js.map

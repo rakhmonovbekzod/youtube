@@ -1,28 +1,16 @@
 import express, { Request, Response, Router } from 'express';
-import checkToken from '../../middlewares/checkToken';
+import { getAll } from '../../controllers/videos';
 
 
 const router: Router = express.Router();
 
-const mockVideos = [
-    {
-      title: 'Cute Kittens Playing',
-      description: 'Watch these adorable kittens play with toys and each other.',
-      url: '/assets/videos/kittens.mp4',
-      thumbnail_url: '/assets/images/kittens.jpg',
-    },
-    {
-      title: 'Epic Nature Time-lapse',
-      description: 'Experience the beauty of nature in this stunning time-lapse video.',
-      url: '/assets/videos/nature.mp4',
-      thumbnail_url: '/assets/images/nature.jpg',
-    },
-    
-  ]
-
-router.get('/video/:id', checkToken,(req: Request, res: Response) => {
-  res.send('this is single video page');
+router.get('/videos',async (req: Request, res: Response,next) => {
+  const data = await getAll();
+  res.header('Access-Control-Allow-Origin', "*");
+  res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+  res.send(data);
 });
-
 
 export default router;

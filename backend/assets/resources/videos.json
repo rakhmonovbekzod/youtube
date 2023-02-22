@@ -9,67 +9,67 @@
       "title": "Video 2",
       "description": "Description of video 2",
       "url": "http://localhost:4000/videos/video_2.mp4",
-      "thumbnailUrl": "/assets/videos/video2-thumbnail.jpg"
+      "thumbnailUrl": "http://localhost:4000/images/image_2.jpg"
     },
     {
       "title": "Video 3",
       "description": "Description of video 3",
       "url": "http://localhost:4000/videos/video_3.mp4",
-      "thumbnailUrl": "/assets/videos/video3-thumbnail.jpg"
+      "thumbnailUrl": "http://localhost:4000/images/image_3.jpg"
     },
     {
       "title": "Video 4",
       "description": "Description of video 4",
       "url": "http://localhost:4000/videos/video_4.mp4",
-      "thumbnailUrl": "/assets/videos/video4-thumbnail.jpg"
+      "thumbnailUrl": "http://localhost:4000/images/image_4.jpg"
     },
     {
       "title": "Video 5",
       "description": "Description of video 5",
       "url": "http://localhost:4000/videos/video_5.mp4",
-      "thumbnailUrl": "/assets/videos/video5-thumbnail.jpg"
+      "thumbnailUrl": "http://localhost:4000/images/image_5.jpg"
     },
     {
       "title": "Video 6",
       "description": "Description of video 6",
       "url": "http://localhost:4000/videos/video_6.mp4",
-      "thumbnailUrl": "/assets/videos/video6-thumbnail.jpg"
+      "thumbnailUrl": "http://localhost:4000/images/image_6.jpg"
     },
     {
       "title": "Video 7",
       "description": "Description of video 7",
-      "url": "/assets/videos/video7.mp4",
-      "thumbnailUrl": "/assets/videos/video7-thumbnail.jpg"
+      "url": "http://localhost:4000/videos/video_7.mp4",
+      "thumbnailUrl": "http://localhost:4000/images/image_7.jpg"
     },
     {
       "title": "Video 8",
       "description": "Description of video 8",
-      "url": "/assets/videos/video8.mp4",
-      "thumbnailUrl": "/assets/videos/video8-thumbnail.jpg"
+      "url": "http://localhost:4000/videos/video_8.mp4",
+      "thumbnailUrl": "http://localhost:4000/images/image_8.jpg"
     },
     {
       "title": "Video 9",
       "description": "Description of video 9",
-      "url": "/assets/videos/video9.mp4",
-      "thumbnailUrl": "/assets/videos/video9-thumbnail.jpg"
+      "url": "http://localhost:4000/videos/video_9.mp4",
+      "thumbnailUrl": "http://localhost:4000/images/image_9.jpg"
     },
     {
       "title": "Video 10",
       "description": "Description of video 10",
-      "url": "/assets/videos/video10.mp4",
-      "thumbnailUrl": "/assets/videos/video10-thumbnail.jpg"
+      "url": "http://localhost:4000/videos/video_10.mp4",
+      "thumbnailUrl": "http://localhost:4000/images/image_10.jpg"
     },
     {
       "title": "Video 11",
       "description": "Description of video 11",
-      "url": "/assets/videos/video11.mp4",
-      "thumbnailUrl": "/assets/videos/video11-thumbnail.jpg"
+      "url": "http://localhost:4000/videos/video_11.mp4",
+      "thumbnailUrl": "http://localhost:4000/images/image_11.jpg"
     },
     {
       "title": "Video 12",
       "description": "Description of video 12",
-      "url": "/assets/videos/video12.mp4",
-      "thumbnailUrl": "/assets/videos/video12-thumbnail.jpg"
+      "url": "http://localhost:4000/videos/video_12.mp4",
+      "thumbnailUrl": "http://localhost:4000/images/image_12.jpg"
     }
   ]
   

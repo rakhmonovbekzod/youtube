@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import Profile from "./pages/profile";
 import SingleVideo from "./pages/Singlevideo";
 import Videos from "./pages/videos";
+import  "./styles/grid.css";
 
 const App: React.FC = () => {
   return (

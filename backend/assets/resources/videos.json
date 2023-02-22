@@ -1,38 +1,38 @@
 [
     {
       "title": "Video 1",
-      "description": "Description of video 1",
-      "url": "../assets/videos/video_1.mp4",
-      "thumbnailUrl": "/assets/videos/video1-thumbnail.jpg"
+      "description": "Description of video 1dffddfdf",
+      "url": "http://localhost:4000/videos/video_1.mp4",
+      "thumbnailUrl": "http://localhost:4000/images/image_1.jpg"
     },
     {
       "title": "Video 2",
       "description": "Description of video 2",
-      "url": "/assets/videos/video2.mp4",
+      "url": "http://localhost:4000/videos/video_2.mp4",
       "thumbnailUrl": "/assets/videos/video2-thumbnail.jpg"
     },
     {
       "title": "Video 3",
       "description": "Description of video 3",
-      "url": "/assets/videos/video3.mp4",
+      "url": "http://localhost:4000/videos/video_3.mp4",
       "thumbnailUrl": "/assets/videos/video3-thumbnail.jpg"
     },
     {
       "title": "Video 4",
       "description": "Description of video 4",
-      "url": "/assets/videos/video4.mp4",
+      "url": "http://localhost:4000/videos/video_4.mp4",
       "thumbnailUrl": "/assets/videos/video4-thumbnail.jpg"
     },
     {
       "title": "Video 5",
       "description": "Description of video 5",
-      "url": "/assets/videos/video5.mp4",
+      "url": "http://localhost:4000/videos/video_5.mp4",
       "thumbnailUrl": "/assets/videos/video5-thumbnail.jpg"
     },
     {
       "title": "Video 6",
       "description": "Description of video 6",
-      "url": "/assets/videos/video6.mp4",
+      "url": "http://localhost:4000/videos/video_6.mp4",
       "thumbnailUrl": "/assets/videos/video6-thumbnail.jpg"
     },
     {

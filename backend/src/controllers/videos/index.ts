@@ -15,13 +15,17 @@ const createTable = async () => {
   }
 
   
-const insertMockData = async () => {
+  const insertMockData = async () => {
+    const checkDataQuery = `SELECT EXISTS(SELECT 1 FROM videos)`;
+    const rows= await fetch(checkDataQuery);
   
-    const insertQuery = `INSERT INTO videos (video_title, video_description, video_url, video_thumbnail_url)
-                         VALUES ($1, $2, $3, $4)`;
-    
-    for (const data of getVideos()) {
-      await fetch(insertQuery, [data.title, data.description, data.url, data.thumbnailUrl]);
+    if (!rows[0].exists) {
+      const insertQuery = `INSERT INTO videos (video_title, video_description, video_url, video_thumbnail_url)
+                             VALUES ($1, $2, $3, $4)`;
+        
+      for (const data of getVideos()) {
+        await fetch(insertQuery, [data.title, data.description, data.url, data.thumbnailUrl]);
+      }
     }
   }
   
@@ -30,7 +34,7 @@ const insertMockData = async () => {
     await insertMockData();
   
     const query = `SELECT * FROM videos LIMIT $1`;
-    const result = await fetch(query, [10]);
+    const result = await fetch(query, [100]);
     return result;
   }
   

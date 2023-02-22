@@ -29,6 +29,9 @@ const VideoList = () => {
           <li key={video.video_id}>
             <h2>{video.video_title}</h2>
             <p>{video.video_description}</p>
+            <a href={video.video_url} target="_blank" rel="noopener noreferrer">
+              <img src={video.video_thumbnail_url} alt={video.video_title} />
+            </a>
             <video width="320" height="240" controls>
               <source src={video.video_url} type="video/mp4" />
               Your browser does not support the video tag.

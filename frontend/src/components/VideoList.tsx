@@ -1,6 +1,6 @@
-
 import React, { useState, useEffect } from 'react';
 import axios from "axios";
+import { Link } from 'react-router-dom';
 import VideoCard from './VideoCard';
 
 type Video = {
@@ -27,8 +27,10 @@ const VideoList = () => {
       <h1>Video List</h1>
       <ul className='row'>
         {videos.map((video,i) => (
-          <li className='col-6'>
-            <VideoCard className='card'  key={i} {...video}/>
+          <li className='col-6' key={i}>
+            <Link to={`/videos/${video.video_id}`}>
+              <VideoCard className='card' {...video}/>
+            </Link>
           </li>
         ))}
       </ul>
@@ -37,3 +39,4 @@ const VideoList = () => {
 };
 
 export default VideoList;
+

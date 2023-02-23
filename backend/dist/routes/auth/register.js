@@ -13,16 +13,17 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
+const singleVideo_1 = require("../../controllers/singleVideo");
 const videos_1 = require("../../controllers/videos");
 const router = express_1.default.Router();
-router.get('/videos', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    const data = (0, videos_1.getAll)();
-    console.log(data, "dat");
-    res.header('Access-Control-Allow-Origin', "*");
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
-    next();
+router.get('/videos', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const data = yield (0, videos_1.getAll)();
+    res.send(data);
+}));
+router.get('/videos/:id', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const id = Number(req.params.id);
+    const data = yield (0, singleVideo_1.getSingleVideo)(id);
     res.send(data);
 }));
 exports.default = router;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=register.js.map

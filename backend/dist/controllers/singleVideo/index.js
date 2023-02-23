@@ -8,21 +8,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-const express_1 = __importDefault(require("express"));
-const videos_1 = require("../../controllers/videos");
-const router = express_1.default.Router();
-router.get('/videos', (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
-    const data = (0, videos_1.getAll)();
-    console.log(data, "dat");
-    res.header('Access-Control-Allow-Origin', "*");
-    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
-    res.header('Access-Control-Allow-Headers', 'Content-Type');
-    next();
-    res.send(data);
-}));
-exports.default = router;
+exports.getSingleVideo = void 0;
+const database_1 = require("../../database");
+const getSingleVideo = (id) => __awaiter(void 0, void 0, void 0, function* () {
+    const query = `SELECT * FROM videos where video_id = $1`;
+    const result = yield (0, database_1.fetch)(query, [id]);
+    return result;
+});
+exports.getSingleVideo = getSingleVideo;
 //# sourceMappingURL=index.js.map
